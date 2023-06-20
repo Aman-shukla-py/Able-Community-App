@@ -8,7 +8,9 @@
     android:background="#f4f4f4"
     android:paddingTop="8dp">
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
+        app:civ_border_width="5dp"
+        app:civ_border_color="#0E0E0E"
         android:id="@+id/comment_user_img"
         android:layout_width="42dp"
         android:layout_height="42dp"

@@ -163,7 +163,6 @@ public class PostDetailActivity extends AppCompatActivity {
                 commentAdapter = new CommentAdapter(PostDetailActivity.this,listComment);
                 RvComment.setAdapter(commentAdapter);
 
-
             }
 
             @Override

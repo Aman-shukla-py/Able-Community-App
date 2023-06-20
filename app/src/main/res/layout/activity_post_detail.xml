@@ -73,7 +73,7 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view"
-            tools:text="18 jan 2018 | by Arun Larrson " />
+            tools:text="18 jan 2018 | by Aman Shukla " />
 
         <TextView
 
@@ -92,7 +92,9 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/post_detail_date_name" />
 
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
+            app:civ_border_width="2dp"
+            app:civ_border_color="#0E0E0E"
             android:id="@+id/post_detail_currentuser_img"
             android:layout_width="36dp"
             android:layout_height="36dp"
@@ -135,11 +137,14 @@
             app:layout_constraintTop_toTopOf="@+id/post_detail_comment"
             app:layout_constraintVertical_bias="0.529" />
 
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
+            app:civ_border_width="2dp"
+            app:civ_border_color="#0E0E0E"
             android:id="@+id/post_detail_user_img"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
             android:layout_marginLeft="8dp"
             app:layout_constraintBottom_toBottomOf="@+id/post_detail_date_name"
             app:layout_constraintStart_toEndOf="@+id/post_detail_date_name"

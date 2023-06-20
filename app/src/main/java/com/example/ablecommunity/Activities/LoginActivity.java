@@ -28,7 +28,7 @@ public class LoginActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private Intent HomeActivity;
 
-    private TextView logtoRegister;
+    private TextView logtoRegister,forgotPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,10 +38,21 @@ public class LoginActivity extends AppCompatActivity {
         userMail = findViewById(R.id.login_mail);
         userPassword = findViewById(R.id.login_password);
         btnLogin = findViewById(R.id.loginBtn);
+        forgotPassword=findViewById(R.id.forgotPassword);
         mAuth = FirebaseAuth.getInstance();
         HomeActivity = new Intent(this,HomeActivity.class);
 
         logtoRegister=findViewById(R.id.login_to_Register);
+
+
+        forgotPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent forgot_pass=new Intent(LoginActivity.this,ForgetPasswordActivity.class);
+                startActivity(forgot_pass);
+                finish();
+            }
+        });
 
 
         logtoRegister.setOnClickListener(new View.OnClickListener() {

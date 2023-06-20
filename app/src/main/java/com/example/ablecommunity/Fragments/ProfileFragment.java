@@ -13,6 +13,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.example.ablecommunity.Models.User;
 import com.example.ablecommunity.R;
@@ -35,7 +36,6 @@ public class ProfileFragment extends Fragment {
     StorageReference storageReference;
     Dialog dialog;
     String uid;
-
 
 
 

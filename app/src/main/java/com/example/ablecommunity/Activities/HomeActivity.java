@@ -307,7 +307,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         View headerView = navigationView.getHeaderView(0);
         TextView navUsername = headerView.findViewById(R.id.nav_username);
         TextView navUserMail = headerView.findViewById(R.id.nav_user_mail);
-        ImageView navUserPhot = headerView.findViewById(R.id.nav_user_photo);
+        ImageView navUserPhoto = headerView.findViewById(R.id.nav_user_photo);
 
         navUserMail.setText(currentUser.getEmail());
         navUsername.setText(currentUser.getDisplayName());
@@ -315,10 +315,6 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         // here we are using Glide to load user image
         // first we need to import the library
 
-        Glide.with(HomeActivity.this).load(currentUser.getPhotoUrl()).into(navUserPhot);
-
-
-
-
+        Glide.with(HomeActivity.this).load(currentUser.getPhotoUrl()).into(navUserPhoto);
     }
 }
